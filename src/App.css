@@ -1,0 +1,9 @@
+.highcharts-xaxis-labels span {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.highcharts-plot-line {
+  stroke: #dddddd;
+  stroke-width: 1px;
+}
