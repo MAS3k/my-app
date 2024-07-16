@@ -81,7 +81,7 @@ const BarChart = () => {
             ]
         },
         series: [{
-            name: 'opnion',
+            name: 'percent',
             data: data,
             color: '#00008B',
             zIndex: 10,
