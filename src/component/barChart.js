@@ -14,6 +14,8 @@ const BarChart = () => {
     const options = {
         chart: {
             type: 'column',
+            height: 400,
+            width: 800,
         },
         title: {
             text: null,
@@ -138,8 +140,10 @@ const BarChart = () => {
     };
 
     return (
-        <div>
-            <HighchartsReact highcharts={Highcharts} options={options} />
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '70px' }}>
+            <div >
+                <HighchartsReact highcharts={Highcharts} options={options} />
+            </div>
         </div>
     );
 };
