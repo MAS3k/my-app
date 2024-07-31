@@ -99,7 +99,7 @@ const BarChart = () => {
             dataLabels: {
                 enabled: true,
                 formatter: function () {
-                    return `${((this.y / total) * 100).toFixed(1)}%`;
+                    return `${this.y}%`;
                 },
                 style: {
                     fontSize: '10px',
@@ -112,18 +112,18 @@ const BarChart = () => {
                 borderWidth: 0,
                 borderRadius: 10,
             },
-            series: {
-                marker: {
-                    enabled: false,
-                },
-                point: {
-                    events: {
-                        click: function () {
-                            alert('Category: ' + this.category + ', Value: ' + this.y);
-                        },
-                    },
-                },
-            },
+            // series: {
+            //     marker: {
+            //         enabled: false,
+            //     },
+            //     point: {
+            //         events: {
+            //             click: function () {
+            //                 alert('Category: ' + this.category + ', Value: ' + this.y);
+            //             },
+            //         },
+            //     },
+            // },
         },
         exporting: {
             enabled: false,
